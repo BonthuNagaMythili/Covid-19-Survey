@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<h2>Welcome to Health Info Updation</h2>
+	<link rel = "stylesheet" type = "text/css" href = "style.css">
+</head>
+<body>
+    <form action = "http://localhost:5000/update_status" method = "post" autocomplete="off">
+		patient ID :<p><input type="number" name="id"/></p>
+		Health Status :
+		<p>
+			<select  name="healthstatus">
+		    	<option value="Cured">Cured</option>
+			</select>
+		</p>
+		No.of.Days Treated :<p><input type="number" name ='treatment_days'></p>
+		Discharge :
+		<p>
+			<select  name="discharge">
+		    	<option value="Discharged">Discharged</option>
+			</select>
+		</p>
+		Discharge Date :<p><input type="date" name="dateofdischarge"/></p>
+		<p><input type = "submit" value = "submit" /></p>
+	</form>
+	<a href="http://localhost:5000/patient_status"><button >Back</button></a>
+
+</body>
+</html>

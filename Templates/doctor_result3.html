@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<h2> Vijayawada  Branch  Doctor  Details </h2>
+
+</head>
+
+<!-- Adding some style to table (OPTIONAL) -->
+<style type="text/css">
+
+	h2{
+		text-align:center;
+		background: #1abc9c;
+		font-family:sans-serif;
+	}
+
+	th:tr{
+		color: black;
+
+	}
+
+	tr:nth-of-type(2n){
+		border: 1px solid black;
+		background-color: rgba(150, 150, 150, 0.5);
+		background: #1abc9c;
+	}
+
+	td{
+		padding: 8px 8px;
+		border: 1px solid black;
+
+	}
+
+	#tab{
+			margin-left:42.5%;
+			margin-top:8px;
+			width:11%;
+	}
+</style>
+
+<body>
+
+<table style="margin-left: 17%;\">
+<!-- Table headers -->
+	<th>
+		<tr style="color: black; ">
+		<td>Doctor id</td>
+		<td>First name</td>
+		<td> Last name</td>
+			<td>Age</td>
+			<td>Gender</td>
+			<td>Date of birth</td>
+			<td>Salary</td>
+			<td>Experience</td>
+			<td>Qualification</td>
+			<td>Mobile</td>
+			<td>Dateofjoin</td>
+
+</tr>
+	</th>
+
+{% for details in details %}
+<tr>
+	<td>{{ details[0]}}</td>
+	<td>{{details[1]}}</td>
+	<td>{{details[2]}}</td>
+	<td>{{details[3]}}</td>
+	<td>{{details[4]}}</td>
+	<td>{{details[5]}}</td>
+	<td>{{details[6]}}</td>
+	<td>{{details[7]}}</td>
+	<td>{{details[8]}}</td>
+	<td>{{details[9]}}</td>
+	<td>{{details[10]}}</td>
+{% endfor %}
+</tr>
+</table>
+    <a href="http://localhost:5000/branch3_doctors"><button id= "tab" > Back </button></a>
+    </body>
+
+
+</html>

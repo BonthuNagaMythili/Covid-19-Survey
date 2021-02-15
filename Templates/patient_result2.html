@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<h2> Chittoor Branch Patient Details</h2>
+</head>
+<style type="text/css">
+
+	h2{
+		text-align:center;
+		background: #1abc9c;
+		font-family:sans-serif;
+	}
+
+	th:tr{
+		color: #1abc9c;
+
+	}
+	tr:nth-of-type(2n){
+		border: 1px solid black;
+		background-color: rgba(150, 150, 150, 0.5);
+		font-family:sans-serif;
+		background: #1abc9c;
+
+	}
+
+	#tab{
+			margin-left:42.5%;
+			margin-top:8px;
+			width:11%;
+	}
+
+	td{
+		padding: 8px;
+		border: 1px solid black;
+	}
+</style>
+<body>
+	<table style="margin-left: 16.5%;">
+	<!-- Table headers -->
+		<th>
+			<tr style="color: black; ">
+			<td>Patient id</td>
+			<td>Fisrt name</td>
+			<td>Last name</td>
+			<td> Treated doctor ID</td>
+				<td>Age</td>
+				<td>Gender</td>
+			<td>Date of birth</td>
+			<td>Occupation</td>
+			<td>Mobile</td>
+				<td> Blood Group </td>
+			</tr>
+		</th>
+
+{% for details in details %}
+<tr>
+	<td>{{ details[0]}}</td>
+	<td>{{details[1]}}</td>
+	<td>{{details[2]}}</td>
+	<td>{{details[3]}}</td>
+	<td>{{details[4]}}</td>
+	<td>{{details[5]}}</td>
+	<td>{{details[6]}}</td>
+	<td>{{details[7]}}</td>
+	<td>{{details[8]}}</td>
+	<td>{{details[9]}}</td>
+{% endfor %}
+</tr>
+
+</table>
+    <a href="http://localhost:5000/branch2_patient"><button id="tab">Back</button></a>
+    </body>
+
+
+</html>

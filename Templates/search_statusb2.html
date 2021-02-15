@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <h2>Enter patient ID</h2>
+	<link rel = "stylesheet" type = "text/css" href = "style.css">
+</head>
+<style>
+
+        #pi{
+            margin-left:44.5%;
+            padding:2px;
+        }
+        #pid{
+            margin-left:48%;
+            padding:1px;
+            width:4%;
+        }
+        #pid1{
+            margin-left:48%;
+            padding:0.2px;
+            width:4%;
+            margin-top:1px;
+        }
+</style>
+<body>
+    <form action = "http://localhost:5000/search_statusb2" method = "post" autocomplete="off">
+    <p><input type="number" id="pi" name="id"/></p>
+    <p><input type = "submit" id ="pid" value = "Submit" /></p>
+    </form>
+    <input type="button" onClick="location.href='http://localhost:63342/Dbms_pro/templates/statuspage2.html?_ijt=pupivm4gs77qa2ttugvmqj0497'" id="pid1" value = "Back"/>
+
+</body>
+</html>

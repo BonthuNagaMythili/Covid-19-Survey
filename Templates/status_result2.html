@@ -1,0 +1,81 @@
+<html>
+<head>
+	<h2> PATIENT'S HEALTH RECORD DETAILS</h2>
+</head>
+<style type="text/css">
+
+	h2{
+		text-align:center;
+		background: #1abc9c;
+		font-family:sans-serif;
+	}
+
+	th:tr{
+		color: #1abc9c;
+
+	}
+	tr:nth-of-type(2n){
+		border: 1px solid black;
+		background-color: rgba(150, 150, 150, 0.5);
+		font-family:sans-serif;
+		background: #1abc9c;
+	}
+	#tab{
+			margin-left:39.5%;
+			margin-top:8px;
+			width:10%;
+			margin-bottom:6px;
+	}
+	#up{
+			margin-top:8px;
+			margin-bottom:6px;
+			width:10%;
+	}
+
+	td{
+		padding: 8px;
+		border: 1px solid black;
+	}
+</style>
+<body>
+
+	<a href="http://localhost:63342/Dbms_pro/templates/statuspage2.html?_ijt=pupivm4gs77qa2ttugvmqj0497"><button id="tab">Back</button></a>
+	<a href="http://localhost:63342/Dbms_pro/templates/healthstatus2.html?_ijt=j7v2lsv6vjtvd6rb0kj7saq3qi"><button id="up"> Update </button></a>
+
+	<table style="margin-left: 15.5%">
+	<!-- Table headers -->
+		<th>
+			<tr style="color: black; ">
+				<td>  Patient Id </td>
+			<td> First Name</td>
+			<td> Last Name</td>
+			<td> Treated Doctor Id</td>
+			<td> No.Of.Days.Treated</td>
+			<td> Health Status </td>
+			<td>  Discharge    </td>
+			<td>Blood Group</td>
+			<td> Date Of Join  </td>
+			<td> Date Of Discharge </td>
+			</tr>
+		</th>
+
+{% for details in details %}
+<tr>
+	<td>{{details[0]}}</td>
+	<td>{{details[1]}}</td>
+	<td>{{details[2]}}</td>
+	<td>{{details[3]}}</td>
+	<td>{{details[4]}}</td>
+	<td>{{details[5]}}</td>
+	<td>{{details[6]}}</td>
+	<td>{{details[7]}}</td>
+	<td>{{details[8]}}</td>
+	<td>{{details[9]}}</td>
+{% endfor %}
+</tr>
+
+</table>
+
+</body>
+
+</html>

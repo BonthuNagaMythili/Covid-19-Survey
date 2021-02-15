@@ -1,0 +1,39 @@
+  <html>
+<head>
+	<h2>Enter the Details of Patient</h2>
+	<link rel = "stylesheet" type = "text/css" href = "style.css">
+</head>
+<body>
+	<form action = "http://localhost:5000/add_patient" method = "post" autocomplete="off">
+		Patient Name :<p>
+			First name :<input type = "text"  name = "firstname" />
+			Last name  :<input type = "text"  name = "lastname" />
+		</p>
+		Alloted Doctor Id<p><input type="text" name="docid"/></p>
+		Age<p><input type="number" name="age"/></p>
+		Gender<p>
+			<select  name="gender">
+		    	<option value="Male">Male</option>
+		    	<option value="Female">Female</option>
+		    	<option value="Others">Others</option>
+			</select>
+		</p>
+		Date of birth<p><input type='date' name="dateofbirth"/></p>
+		Occupation<p><input type="text" name="occupation"/></p>
+		Mobile<p><input type="text" name="ph_num"/></p>
+		City <p><input type="text" name="city"/></p>
+		Blood group<p><select  name="bloodgroup">
+		    	<option value="A+">A+</option>
+		    	<option value="AB+">AB+</option>
+		    	<option value="B+">B+</option>
+				<option value="O+">O+</option>
+		    	<option value="A-">A-</option>
+		    	<option value="B-">B-</option>
+				<option value="AB-">AB-</option>
+		    	<option value="O-">O-</option>
+			</select></p>
+		<p><input type = "submit" id="submit" value = "submit" /></p>
+	</form>
+    <a href="http://localhost:5000/patient_info" ><button>BACK</button></a>
+</body>
+</html>

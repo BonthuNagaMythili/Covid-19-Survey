@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<h2> Chittoor Branch Home Page </h2>
+	<link rel = "stylesheet" type = "text/css" href = "style.css">
+</head>
+<style>
+	h2{
+			text-align:center;
+			background:#1abc9c;
+			color:black;
+			font-family:sans-serif;
+	}
+	th:tr{
+		color: #1abc9c;
+
+	}
+	tr:nth-of-type(2n){
+		border: 1px solid black;
+		background-color: rgba(150, 150, 150, 0.5);
+		font-family:sans-serif;
+		background: #1abc9c;
+	}
+	td{
+		padding: 8px;
+		border: 1px solid black;
+	}
+
+	#tab{
+			margin-left:31.4%;
+			margin-top:8px;
+			width:11%;
+			padding:4px;
+	}
+	#tab1{
+			margin-top:8px;
+			width:11%;
+			padding:4px;
+
+
+	}
+	#tab2{
+			margin-top:8px;
+			width:12.5%;
+			padding:4px;
+
+	}
+
+	#btn{
+			margin-left:45%;
+			width:9%;
+			margin-top:2%;
+			padding:3px;
+	}
+</style>
+<body>
+	<table style="margin-left: 34.5%;">
+	<th>
+			<tr style="color: black; ">
+			<td>Total Doctors</td>
+			<td>Total patients admitted</td>
+			<td>Recovered Patients</td>
+			</tr>
+	</th>
+		{% for details in details %}
+		<tr>
+			<td>{{ details[0]}}</td>
+			<td>{{details[1]}}</td>
+			<td>{{details[2]}}</td>
+		{% endfor %}
+	</tr>
+
+	</table>
+
+
+	<input type="button" onClick="location.href='http://localhost:5000/home1'" id="tab" value = "Back"/>
+	<input type="button" onClick="location.href='http://localhost:63342/Dbms_pro/templates/sigin2.html?_ijt=pupivm4gs77qa2ttugvmqj0497'"  id="tab1" value = "Login" />
+    <input type="button" onClick="location.href='http://localhost:5000/home3'" id="tab2" value = "Next"/>
+
+    
+</body>
+
+</html>

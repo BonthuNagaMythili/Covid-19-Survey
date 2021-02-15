@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <h2>Enter Doctor Id</h2>
+	<link rel = "stylesheet" type = "text/css" href = "style.css">
+</head>
+<style>
+            #pi{
+            margin-left:44.5%;
+            padding:2px;
+        }
+        #pid{
+            margin-left:48%;
+            padding:1px;
+            width:4%;
+        }
+        #pid1{
+            margin-left:48%;
+            padding:0.2px;
+            width:4%;
+            margin-top:1px;
+        }
+</style>
+<body>
+    <form action = "http://localhost:5000/search_doctor" method = "post" autocomplete="off">
+    <p><input type="number" id="pi" name="id"/></p>
+    <p><input type = "submit" id ="pid" value = "SUBMIT" /></p>
+    </form>
+    <input type="button" onClick="location.href='http://localhost:5000/doctors_info'" id="pid1" value = "Back"/>
+</body>
+</html>

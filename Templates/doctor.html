@@ -1,0 +1,33 @@
+<html>
+<head>
+	<h2>Enter the Details of Doctor</h2>
+	<link rel = "stylesheet" type = "text/css" href = "style.css"> 
+		
+</style>
+</head>
+<body>
+	<form action = "http://localhost:5000/add_doctor" method = "post" autocomplete="off">
+        Doctor ID<p><input type="text" name="id"/></p>
+		Doctor Name<p>
+			first name :<input type = "text"  name = "firstname" autocomplete="off"/>
+			last name  :<input type = "text"  name = "lastname" autocomplete="off"/>
+		</p>
+		Age<p><input type="number" name="age"/></p>
+        Gender<p>
+        <select  name="gender">
+			<OPTION Value="Male">male</OPTION>
+			<OPTION Value="Female">female</OPTION>
+			<OPTION Value="Other">other</OPTION>
+		</SELECT>
+		</p>
+		Date of birth<p><input type='date' name="dateofbirth"/></p>
+		Salary<p><input type="number" name="salary"/></p>
+		Experience<p><input type="number" name="experience"/></p>
+		Qualification<p><input type="text" name="qualification"/></p>
+		Mobile<p><input type="text" name="ph_num"/></p>
+		Date of join<p><input type="date" name ="dateofjoin"/></p>
+		<p><input type = "submit" id ="submit" value = "submit" /></p>
+	</form>
+<a href="http://localhost:5000/doctors_info" ><button>BACK</button></a>
+</body>
+</html>

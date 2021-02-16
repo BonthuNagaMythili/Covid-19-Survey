@@ -8,7 +8,7 @@ app = Flask(__name__)
 def doctors_info():
     connection = pymysql.connect(host='localhost',
                           user='root',
-                          password='mythili13',
+                          password='your Password',
                           db='hospital01')
     try:
         with connection.cursor() as cursor:
@@ -23,7 +23,7 @@ def doctors_info():
 def patient_info():
     connection = pymysql.connect(host='localhost',
                           user='root',
-                          password='mythili13',
+                          password='your Password',
                           db='hospital01')
     try:
         with connection.cursor() as cursor:
@@ -38,7 +38,7 @@ def patient_info():
 def add_patient():
     connection = pymysql.connect(host='localhost',
                                  user='root',
-                                 password='mythili13',
+                                 password='your Password',
                                  db='hospital01'
                                  )
     if request.method == 'POST':
@@ -67,7 +67,7 @@ def add_patient():
 def add_doctor():
     connection = pymysql.connect(host='localhost',
                                  user='root',
-                                 password='mythili13',
+                                 password='your Password',
                                  db='hospital01'
                                  )
     if request.method == 'POST':
@@ -99,7 +99,7 @@ def add_doctor():
 def patient_status():
     connection = pymysql.connect(host='localhost',
                                  user='root',
-                                 password='mythili13',
+                                 password='your Password',
                                  db='hospital01')
     try:
         with connection.cursor() as cursor:
@@ -114,7 +114,7 @@ def patient_status():
 def recovered_status():
     connection = pymysql.connect(host='localhost',
                                  user='root',
-                                 password='mythili13',
+                                 password='your Password',
                                  db='hospital01')
     try:
         with connection.cursor() as cursor:
@@ -129,7 +129,7 @@ def recovered_status():
 def patient_full():
     connection = pymysql.connect(host='localhost',
                           user='root',
-                          password='mythili13',
+                          password='your Password',
                           db='hospital01')
     try:
         with connection.cursor() as cursor:
@@ -145,7 +145,7 @@ def patient_full():
 def update_status():
     connection = pymysql.connect(host='localhost',
                                  user='root',
-                                 password='mythili13',
+                                 password='your Password',
                                  db='hospital01'
                                  )
     if request.method == 'POST':
@@ -168,7 +168,7 @@ def update_status():
 def search_patient():
     connection = pymysql.connect(host='localhost',
                                  user='root',
-                                 password='mythili13',
+                                 password='your Password',
                                  db='hospital01')
     if request.method == 'POST':
         details = request.form
@@ -189,7 +189,7 @@ def search_patient():
 def search_doctor():
     connection = pymysql.connect(host='localhost',
                                  user='root',
-                                 password='mythili13',
+                                 password='your Password',
                                  db='hospital01')
     if request.method == 'POST':
         details = request.form
@@ -208,7 +208,7 @@ def search_doctor():
 def search_status():
     connection = pymysql.connect(host='localhost',
                                  user='root',
-                                 password='mythili13',
+                                 password='your Password',
                                  db='hospital01')
     if request.method == 'POST':
         details = request.form
@@ -228,7 +228,7 @@ def search_status():
 def branch2_doctors():
     connection = pymysql.connect(host='localhost',
                           user='root',
-                          password='mythili13',
+                          password='your Password',
                           db='branch2')
     try:
         with connection.cursor() as cursor:
@@ -243,7 +243,7 @@ def branch2_doctors():
 def branch2_patient():
     connection = pymysql.connect(host='localhost',
                           user='root',
-                          password='mythili13',
+                          password='your Password',
                           db='branch2')
     try:
         with connection.cursor() as cursor:
@@ -258,7 +258,7 @@ def branch2_patient():
 def add_patientb2():
     connection = pymysql.connect(host='localhost',
                                  user='root',
-                                 password='mythili13',
+                                 password='your Password',
                                  db='branch2'
                                  )
     if request.method == 'POST':
@@ -287,7 +287,7 @@ def add_patientb2():
 def add_doctorb2():
     connection = pymysql.connect(host='localhost',
                                  user='root',
-                                 password='mythili13',
+                                 password='your Password',
                                  db='branch2'
                                  )
     if request.method == 'POST':
@@ -318,7 +318,7 @@ def add_doctorb2():
 def patient_statusb2():
     connection = pymysql.connect(host='localhost',
                                  user='root',
-                                 password='mythili13',
+                                 password='your Password',
                                  db='branch2')
     try:
         with connection.cursor() as cursor:
@@ -333,7 +333,7 @@ def patient_statusb2():
 def recovered_statusb2():
     connection = pymysql.connect(host='localhost',
                                  user='root',
-                                 password='mythili13',
+                                 password='your Password',
                                  db='branch2')
     try:
         with connection.cursor() as cursor:
@@ -348,7 +348,7 @@ def recovered_statusb2():
 def update_statusb2():
     connection = pymysql.connect(host='localhost',
                                  user='root',
-                                 password='mythili13',
+                                 password='your Password',
                                  db='branch2'
                                  )
     if request.method == 'POST':
@@ -371,7 +371,7 @@ def update_statusb2():
 def search_patientb2():
     connection = pymysql.connect(host='localhost',
                                  user='root',
-                                 password='mythili13',
+                                 password='your Password',
                                  db='branch2')
     if request.method == 'POST':
         details = request.form
@@ -390,7 +390,7 @@ def search_patientb2():
 def search_doctorb2():
     connection = pymysql.connect(host='localhost',
                                  user='root',
-                                 password='mythili13',
+                                 password='your Password',
                                  db='branch2')
     if request.method == 'POST':
         details = request.form
@@ -409,7 +409,7 @@ def search_doctorb2():
 def search_statusb2():
     connection = pymysql.connect(host='localhost',
                                  user='root',
-                                 password='mythili13',
+                                 password='your Password',
                                  db='branch2')
     if request.method == 'POST':
         details = request.form
@@ -428,7 +428,7 @@ def search_statusb2():
 def patient_full2():
     connection = pymysql.connect(host='localhost',
                           user='root',
-                          password='mythili13',
+                          password='your Password',
                           db='branch2')
     try:
         with connection.cursor() as cursor:
@@ -445,7 +445,7 @@ def patient_full2():
 def branch3_doctors():
     connection = pymysql.connect(host='localhost',
                           user='root',
-                          password='mythili13',
+                          password='your Password',
                           db='branch3')
     try:
         with connection.cursor() as cursor:
@@ -460,7 +460,7 @@ def branch3_doctors():
 def branch3_patient():
     connection = pymysql.connect(host='localhost',
                           user='root',
-                          password='mythili13',
+                          password='your Password',
                           db='branch3')
     try:
         with connection.cursor() as cursor:
@@ -475,7 +475,7 @@ def branch3_patient():
 def add_patientb3():
     connection = pymysql.connect(host='localhost',
                                  user='root',
-                                 password='mythili13',
+                                 password='your Password',
                                  db='branch3'
                                  )
     if request.method == 'POST':
@@ -504,7 +504,7 @@ def add_patientb3():
 def add_doctorb3():
     connection = pymysql.connect(host='localhost',
                                  user='root',
-                                 password='mythili13',
+                                 password='your Password',
                                  db='branch3'
                                  )
     if request.method == 'POST':
@@ -535,7 +535,7 @@ def add_doctorb3():
 def patient_statusb3():
     connection = pymysql.connect(host='localhost',
                                  user='root',
-                                 password='mythili13',
+                                 password='your Password',
                                  db='branch3')
     try:
         with connection.cursor() as cursor:
@@ -550,7 +550,7 @@ def patient_statusb3():
 def recovered_statusb3():
     connection = pymysql.connect(host='localhost',
                                  user='root',
-                                 password='mythili13',
+                                 password='your Password',
                                  db='branch3')
     try:
         with connection.cursor() as cursor:
@@ -565,7 +565,7 @@ def recovered_statusb3():
 def update_statusb3():
     connection = pymysql.connect(host='localhost',
                                  user='root',
-                                 password='mythili13',
+                                 password='your Password'
                                  db='branch3'
                                  )
     if request.method == 'POST':
@@ -588,7 +588,7 @@ def update_statusb3():
 def search_patientb3():
     connection = pymysql.connect(host='localhost',
                                  user='root',
-                                 password='mythili13',
+                                 password='your Password',
                                  db='branch3')
     if request.method == 'POST':
         details = request.form
@@ -607,7 +607,7 @@ def search_patientb3():
 def search_doctorb3():
     connection = pymysql.connect(host='localhost',
                                  user='root',
-                                 password='mythili13',
+                                 password='your Password',
                                  db='branch3')
     if request.method == 'POST':
         details = request.form
@@ -626,7 +626,7 @@ def search_doctorb3():
 def search_statusb3():
     connection = pymysql.connect(host='localhost',
                                  user='root',
-                                 password='mythili13',
+                                 password='your Password',
                                  db='branch3')
     if request.method == 'POST':
         details = request.form
@@ -645,7 +645,7 @@ def search_statusb3():
 def patient_full3():
     connection = pymysql.connect(host='localhost',
                           user='root',
-                          password='mythili13',
+                          password='your Password',
                           db='branch3')
     try:
         with connection.cursor() as cursor:
@@ -660,7 +660,7 @@ def patient_full3():
 def login1():
     connection = pymysql.connect(host='localhost',
                           user='root',
-                          password='mythili13',
+                          password='your Password',
                           db='hospital01')
 
     if request.method == 'POST':
@@ -681,7 +681,7 @@ def login1():
 def login2():
     connection = pymysql.connect(host='localhost',
                           user='root',
-                          password='mythili13',
+                          password='your Password',
                           db='branch2')
     if request.method == 'POST':
         id = request.form.get('id', False)
@@ -701,7 +701,7 @@ def login2():
 def login3():
     connection = pymysql.connect(host='localhost',
                           user='root',
-                          password='mythili13',
+                          password='your Password',
                           db='branch3')
     if request.method == 'POST':
         id = request.form.get('id', False)
@@ -721,7 +721,7 @@ def login3():
 def home1():
     connection = pymysql.connect(host='localhost',
                           user='root',
-                          password='mythili13',
+                          password='your Password',
                           db='hospital01')
     try:
         with connection.cursor() as cursor:
@@ -738,7 +738,7 @@ def home1():
 def home2():
     connection = pymysql.connect(host='localhost',
                           user='root',
-                          password='mythili13',
+                          password='your Password',
                           db='branch2')
     try:
         with connection.cursor() as cursor:
@@ -753,7 +753,7 @@ def home2():
 def home3():
     connection = pymysql.connect(host='localhost',
                           user='root',
-                          password='mythili13',
+                          password='your Password',
                           db='branch3')
     try:
         with connection.cursor() as cursor:
